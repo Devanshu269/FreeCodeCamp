@@ -1,0 +1,88 @@
+body{
+    background-color: lightblue;
+    height: 100vh;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size:cover; /* Optional: scales the image to cover the entire area */
+    background-position: center;
+    color: #ffffff;
+    font-family: Tahoma;
+    font-size: 16px;
+    margin: 0;
+}
+body:hover {
+    background-color: rgb(98, 0, 255); /* Change color on hover */
+}
+fieldset{
+    border: 0;
+    padding: 2rem 0;
+    border-bottom: 3px solid #fc0303;
+}
+h1, p{
+    margin: 1em auto;
+    text-align: center;
+    color: #000000;
+}
+
+form {
+    background-color: rgba(30, 255, 0, 0.5);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+    width: 80vw;
+    max-width: 900px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+
+input,
+textarea,
+select {
+    background-color: #ffffff;
+    border: 1px solid hsl(0, 0%, 100%);
+    color: #000000;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #c45ece;
+    border-color: white;
+    min-width: 300px;
+}
+
+input[type="file"] {
+    padding: 1px 2px;
+}
+
+.inline {
+    display: inline;
+}
+
+a {
+    color: #dfdfe2;
+}

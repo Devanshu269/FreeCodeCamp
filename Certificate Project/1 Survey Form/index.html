@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 id="title">Gamer's Survey Forum</h1>
+    <p id="description">Thank you for taking the time to help us improve the Gaming Community</p>
+    <form id="survey-form">
+        <fieldset for="Personal-Info">
+            <label for="name-label" id="name-label">Name: <input id="name" name="name" type="text"
+                    placeholder="Your Name" required></label>
+            <label for="number-label" id="number-label">Age: <input id="number" name="number" type="number"
+                    placeholder="Your Age" min=13 max=120 required></label>
+            <label for="email-label" id="email-label">Email: <input id="email" name="email" type="email"
+                    placeholder="Your Email" required></label>
+            <label for="Gender"> Please Select your Gender...
+                <select id="dropdown">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Gamer Type (required)</legend>
+            <label for="hard-core"><input id="hard-core" type="radio" name="gamer-type" class="inline"
+                    value="Hard-Core-Gamer" checked class="inline"/> Hard
+                Core</label>
+            <label for="normal"><input id="normal" type="radio" name="gamer-type" class="inline" value="Normal-Gamer" class="inline"/>
+                Normal</label>
+        </fieldset>
+        <fieldset>
+            <legend>Type of Games You Play:</legend>
+            <label for="valo">
+                <input id="valo" type="checkbox" name="game-type" value="valo" class="inline"/> Valorant
+            </label>
+            <label for="csgo">
+                <input id="csgo" type="checkbox" name="game-type" value="csgo" class="inline"/> CSGO 2
+            </label>
+            <label for="pubg">
+                <input id="pubg" type="checkbox" name="game-type" value="pubg" class="inline"/> PUBG
+            </label>
+            <label for="other-game">
+                <input id="other-game" type="checkbox" name="game-type" value="other-games" class="inline"/> Other Games
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="More-Info">Any comments or suggestions?
+                <textarea id="comment" name="comment" placeholder="Enter your comment here..."></textarea>
+            </label>
+        </fieldset>
+        <label for="terms-and-conditions">
+            <input class="inline" id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" value="true-term-and-condition" /> I
+            accept the terms and conditions</a>
+        </label>
+        <input type="submit" value="Submit" id="submit" />
+    </form>
+</body>
+
+</html>
