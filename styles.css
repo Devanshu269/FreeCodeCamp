@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(0, 0, 0);
     color: aliceblue;
     font-family: 'Open Sans', sans-serif;
     margin:auto;
@@ -12,40 +12,37 @@ body{
 }
 
 header{
-    background-color: rgb(98, 0, 255);
+    background-color: rgb(136, 130, 130);
 }
 
 h1{
     margin-top: -3px;
     height: 50px;
-    padding-top: 5px;
+    padding-top: 10px;
     text-align: center;
 }
 
 h1:hover {
-    background-color: rgb(82, 2, 2); /* Change color on hover */
+    background-color: rgb(54, 26, 175); /* Change color on hover */
 }
 
 .taskSection h2{
-    margin-top: 50px;
-    margin-left: 30px;
-    width: 170px;
-    padding: 0;
-    border-bottom: 2px solid white;
-    border-radius: 8px;
     max-width: 180px;
     min-width: 100px;
 }
 
 .projectSection h2{
+    max-width: 300px;
+    min-width: 150px;
+}
+
+.projectSection h2, .taskSection h2{
     margin-top: 50px;
     margin-left: 30px;
     width: 250px;
     padding: 0;
     border-bottom: 2px solid white;
     border-radius: 8px;
-    max-width: 300px;
-    min-width: 150px;
 }
 
 .Plink{
@@ -57,8 +54,8 @@ h3{
     text-align: left;
 }
 section{
-    margin-top: 20px;
-    border: 3px solid black;
+    margin-top: 30px;
+    border: 3px solid rgb(231, 64, 64);
     border-radius: 80px;
     margin-left: 100px;
     margin-right: 100px;
