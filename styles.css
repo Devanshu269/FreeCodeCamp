@@ -68,7 +68,7 @@ div{
     justify-content: center;
     align-items: center;
     gap: 60px;
-    max-width: 1400px;
+    max-width: 60vw;
     margin: 0 auto;
     padding: 20px 10px;
 }
