@@ -1,0 +1,165 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    padding-bottom: 20px;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#header-img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav {
+    flex-grow: 1;
+    margin-right: 2rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+}
+
+
+section {
+    padding: 80px 20px 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#userEmail {
+    display: grid;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#userEmail input[type="email"] {
+    margin-top: 2rem;
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#userEmail input[type="submit"] {
+    margin-top: 2rem;
+    padding: 10px 20px;
+    background-color: #ff4500;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#userEmail input[type="submit"]:hover {
+    background-color: #e63900;
+}
+
+#Introduction {
+    text-align: center;
+}
+
+#Introduction h2 {
+    margin-bottom: 20px;
+    color: #ff4500;
+}
+
+
+#offer {
+    display: grid;
+    gap: 20px;
+    text-align: center;
+}
+
+#offer > div > div {
+    text-align: center;
+    background-color: #333;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#offer img {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+#offer p {
+    font-size: 1.2rem;
+    color: #f5f5f5;
+}
+
+#videoMain {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#videoMain iframe {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #userEmail input[type="email"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #userEmail input[type="submit"] {
+        width: 100%;
+    }
+
+    #offer {
+        grid-template-columns: 1fr;
+    }
+}
