@@ -1,21 +1,21 @@
-*{
+* {
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: rgb(0, 0, 0);
     color: aliceblue;
     font-family: 'Open Sans', sans-serif;
-    margin:auto;
+    margin: auto;
     padding: auto;
 }
 
-header{
+header {
     background-color: rgb(136, 130, 130);
 }
 
-h1{
+h1 {
     margin-top: -3px;
     height: 50px;
     padding-top: 10px;
@@ -23,20 +23,24 @@ h1{
 }
 
 h1:hover {
-    background-color: rgb(54, 26, 175); /* Change color on hover */
+    background-color: rgb(54, 26, 175);
+    /* Change color on hover */
 }
 
-.taskSection h2{
+.taskSection h2 {
     max-width: 180px;
     min-width: 100px;
 }
 
-.projectSection h2{
+.projectSection h2 {
     max-width: 300px;
     min-width: 150px;
 }
 
-.projectSection h2, .taskSection h2{
+.projectSection h2,
+.taskSection h2,
+.labProjectSection h2,
+.randomProjectSection h2 {
     margin-top: 50px;
     margin-left: 30px;
     width: 250px;
@@ -45,15 +49,16 @@ h1:hover {
     border-radius: 8px;
 }
 
-.Plink{
+.Plink {
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 
-h3{
+h3 {
     text-align: left;
 }
-section{
+
+section {
     margin-top: 30px;
     border: 3px solid rgb(231, 64, 64);
     border-radius: 80px;
@@ -61,7 +66,7 @@ section{
     margin-right: 100px;
 }
 
-div{
+div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -73,7 +78,7 @@ div{
     padding: 20px 10px;
 }
 
-a{
+a {
     text-decoration: none;
     color: aliceblue;
 }
