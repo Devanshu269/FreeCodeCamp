@@ -7,8 +7,8 @@ body {
     background-color: rgb(0, 0, 0);
     color: aliceblue;
     font-family: 'Open Sans', sans-serif;
-    margin: auto;
-    padding: auto;
+    margin: 0;
+    padding: 0;
 }
 
 header {
@@ -27,25 +27,15 @@ h1:hover {
     /* Change color on hover */
 }
 
-.taskSection h2 {
-    max-width: 180px;
-    min-width: 100px;
-}
-
-.projectSection h2 {
-    max-width: 300px;
-    min-width: 150px;
-}
-
 .projectSection h2,
 .taskSection h2,
 .labProjectSection h2,
 .randomProjectSection h2 {
-    margin-top: 50px;
-    margin-left: 30px;
-    width: 250px;
-    padding: 0;
+    margin: 20px auto;
+    width: fit-content;
+    padding: 0 10px;
     border-bottom: 2px solid white;
+    text-align: center;
     border-radius: 8px;
 }
 
@@ -59,23 +49,23 @@ h3 {
 }
 
 section {
-    margin-top: 30px;
+    margin: 30px auto;
     border: 3px solid rgb(231, 64, 64);
-    border-radius: 80px;
-    margin-left: 100px;
-    margin-right: 100px;
+    border-radius: 20px;
+    width: 90%;
+    padding-bottom: 20px;
 }
 
-div {
+section>div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    max-width: 60vw;
+    gap: 40px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 20px 10px;
+    padding: 20px;
 }
 
 a {
