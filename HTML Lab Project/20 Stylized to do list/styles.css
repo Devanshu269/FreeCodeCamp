@@ -36,6 +36,7 @@ h1 {
     margin-bottom: 2rem;
     color: var(--text-main);
     background: -webkit-linear-gradient(45deg, var(--primary), #8b5cf6);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
