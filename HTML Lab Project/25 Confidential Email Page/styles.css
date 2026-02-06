@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+    background-color: #0c0c0c;
+    background-image: radial-gradient(circle at 50% 50%, #1a1a1a 0%, #050505 100%);
+    font-family: 'Courier Prime', monospace;
+    color: #222;
+}
+
+#email {
+    box-sizing: border-box;
+    background-color: rgb(221, 200, 200);
+    width: 500px;
+    border: 2px solid black;
+    margin-top: 50px;
+    padding: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5),
+        inset 0 0 100px rgba(0, 0, 0, 0.05);
+}
+
+#top-secret,
+#confidential {
+    display: inline-block;
+    padding: 10px;
+    margin-left: 20px;
+    border: 3px solid red;
+    color: red;
+    font-weight: bold;
+}
+
+#top-secret {
+    transform: translate(50px, 680px) rotate(15deg) scale(1.5);
+}
+
+#confidential {
+    transform: translate(150px, 0px) rotate(340deg) scale(1.5);
+}
+
+p {
+    margin-top: 30px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 1.15rem;
+    position: relative;
+    z-index: 3;
+}
+
+.blurred {
+    filter: blur(3px);
+}
